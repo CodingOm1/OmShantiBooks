@@ -199,18 +199,23 @@ a{
   .heading {
     font-size: 25px;
     text-transform: capitalize;
-    background: #000;
+    background: #00000093;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1.02px;
     font-weight: 700;
   }
   
   .card p:not(.heading) {
     font-size: 14px;
+    background: #000000b7;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    letter-spacing: 1.02px;
   }
   
-  .card p:last-child {
-    color: #000000;
-    font-weight: 600;
-  }
   
   .card:hover::after {
     filter: blur(30px);
