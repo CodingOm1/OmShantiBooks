@@ -199,6 +199,7 @@ a{
   .heading {
     font-size: 25px;
     text-transform: capitalize;
+    background: #000;
     font-weight: 700;
   }
   
