@@ -8,6 +8,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Poppins;
+    transition: .4s ease-in-out;
 }
 body{
     background-color: #111;
@@ -244,6 +245,23 @@ a{
 }
 @media (max-width: 525px) {
     .pdf-container{
-        grid-template-columns: 1fr  ;
+        grid-template-columns: 1fr ;
     }    
 }
+.event{
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 0 10px;
+    border-bottom-right-radius: 15px;
+    font-size: 1rem;
+    font-weight: 500;
+
+}
+.green{background-color: #6dff40;}
+.blue{background-color: #40b9ff;}
+.red{background-color: #ff4040;}
+.fff{color: #fff;}
+.def{color: #1a1a1a;}
+
+.block-none{display: none;}
