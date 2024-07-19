@@ -3,6 +3,27 @@
     src: url(./Poppins-Regular.woff);
 }
 
+::-webkit-scrollbar {
+    width: 5px; /* Adjust the width to make the scrollbar thinner or thicker */
+  }
+  
+  /* Style for the scrollbar track */
+  ::-webkit-scrollbar-track {
+    background: #242424c4; /* Track color */
+  }
+  
+  /* Style for the scrollbar thumb */
+  ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background: #444444; /* Thumb color */
+  }
+  
+  /* Style for the scrollbar thumb on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Thumb color on hover */
+  }
+
+
 *{
     margin: 0;
     padding: 0;
