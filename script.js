@@ -24,6 +24,38 @@ document.getElementById("hamburger").addEventListener("click", function () {
         bar3.style.transform = "none";
     }
 });
+// Function to store visit information in localStorage
+function storeVisitInfo() {
+    const visitInfo = {
+        timestamp: new Date().toISOString(),
+        url: window.location.href,
+        title: document.title
+    };
+    
+    // Store the visit info in localStorage
+    localStorage.setItem('lastVisitInfo', JSON.stringify(visitInfo));
+}
+
+// Function to retrieve and display the last visit info
+function getLastVisitInfo() {
+    const visitInfo = localStorage.getItem('lastVisitInfo');
+    
+    if (visitInfo) {
+        const parsedInfo = JSON.parse(visitInfo);
+        console.log('Last visited page details:');
+        console.log(`URL: ${parsedInfo.url}`);
+        console.log(`Title: ${parsedInfo.title}`);
+        console.log(`Timestamp: ${parsedInfo.timestamp}`);
+    } else {
+        console.log('No visit information found.');
+    }
+}
+
+// Call the function to store visit information
+storeVisitInfo();
+
+// Call the function to display the last visit information
+getLastVisitInfo();
 
 document.addEventListener('DOMContentLoaded', () => {
     const elements = document.querySelectorAll('.event');
